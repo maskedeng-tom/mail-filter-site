@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>プライバシーポリシー — Mail Filter</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mail Filter</h1>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="support.html">サポート</a>
+        <a href="en/privacy.html">English</a>
+      </nav>
+    </header>
+    <main>
+      <h1>プライバシーポリシー</h1>
+      <p class="tagline">最終更新日：2026年9月26日</p>
+
+      <h2>収集する情報</h2>
+      <p>
+        Mail
+        Filterは、利用状況データや解析データを外部のサーバーへ送信しません。アプリが通信する先は、ユーザーご自身が設定したIMAPメールサーバー、およびGmail連携時のGoogle
+        OAuth2認証サーバーのみです。広告SDK・解析SDK・トラッキングの類は一切組み込んでいません。
+      </p>
+
+      <h2>保存する情報</h2>
+      <ul>
+        <li>
+          メールアカウントの認証情報（パスワードまたはOAuthリフレッシュトークン）は、OS標準の暗号化機能（Electronの<code
+            >safeStorage</code
+          >、macOSではKeychain経由）で暗号化した上で、お使いの端末にのみ保存されます。
+        </li>
+        <li>
+          メール本文および分類学習に用いるデータは、端末内のローカルデータベース（SQLite）にのみ保存されます。外部への送信や第三者との共有は一切行いません。
+        </li>
+      </ul>
+
+      <h2>第三者への提供</h2>
+      <p>収集・保存したデータを第三者へ提供することはありません。</p>
+
+      <h2>Gmail連携時のスコープについて</h2>
+      <p>
+        Gmailアカウントと連携する場合、Googleの認証画面では
+        <code>https://mail.google.com/</code
+        >（メールの読み書きに相当するスコープ）のみを要求します。このスコープは、メールの取得・分類・振り分けのためにのみ使用し、それ以外の目的には使用しません。
+      </p>
+
+      <div class="note">
+        <p>
+          Gmail連携時は、Googleの認証画面に表示されるスコープ確認のチェックボックスを必ずチェックしてから許可してください。チェックが漏れると、メールへのアクセス権限が正しく付与されず、接続エラーになります。
+        </p>
+      </div>
+
+      <h2>データの削除</h2>
+      <p>
+        アプリをアンインストールする、またはアプリ内でメールアカウントを削除することで、そのアカウントに関してローカルに保存された認証情報・学習データも削除されます。
+      </p>
+
+      <h2>お問い合わせ</h2>
+      <p>
+        本ポリシーに関するご質問は、<a
+          href="https://github.com/maskedeng-tom/mail-filter-site/issues"
+          >GitHub Issues</a
+        >までお寄せください。
+      </p>
+
+      <h2>改定について</h2>
+      <p>本ポリシーを改定した場合は、このページ上部の最終更新日を更新してお知らせします。</p>
+    </main>
+    <footer>
+      <p>
+        お問い合わせ・不具合報告は
+        <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>
+        まで。
+      </p>
+    </footer>
+  </body>
+</html>
