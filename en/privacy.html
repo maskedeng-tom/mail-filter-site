@@ -36,9 +36,10 @@
           Keychain on macOS) and stored only on your own device.
         </li>
         <li>
-          Email content and the data used for classifier training are stored only in a local
-          database (SQLite) on your device. Nothing is transmitted externally or shared with any
-          third party.
+          The data used for classifier training (statistical classifier state, and metadata such
+          as the sender and subject of previously classified mail) is stored only in a local
+          database (SQLite) on your device. The app never stores the full body of your emails.
+          Nothing is transmitted externally or shared with any third party.
         </li>
       </ul>
 
@@ -47,11 +48,16 @@
 
       <h2>Gmail OAuth Scope</h2>
       <p>
-        When you connect a Gmail account, the Google consent screen requests only the
-        <code>https://mail.google.com/</code> scope (equivalent to reading and writing mail).
-        This scope is used solely to fetch, classify, and sort your mail, and for no other
-        purpose.
+        When you connect a Gmail account, the Google consent screen requests two scopes:
       </p>
+      <ul>
+        <li><code>https://mail.google.com/</code>: used to fetch, classify, and sort your mail.</li>
+        <li>
+          <code>https://www.googleapis.com/auth/userinfo.email</code>: used to identify the
+          connected Google account's email address, so it can be shown in the app's account list.
+        </li>
+      </ul>
+      <p>Neither scope is used for any other purpose.</p>
 
       <div class="note">
         <p>
