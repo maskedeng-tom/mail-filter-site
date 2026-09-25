@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Mail Filter</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mail Filter</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="../support.html">日本語</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Support</h1>
+      <p class="tagline">How to set up Mail Filter and troubleshoot common issues.</p>
+
+      <h2>1. General IMAP Setup</h2>
+      <p>If your mail provider isn't listed in the app, enter your IMAP connection details manually.</p>
+      <ul>
+        <li><strong>Host</strong>: your provider's IMAP server address (e.g. <code>imap.example.com</code>)</li>
+        <li><strong>Port</strong>: usually <code>993</code> (when using SSL/TLS)</li>
+        <li><strong>SSL/TLS</strong>: keep this enabled unless you have a specific reason not to</li>
+      </ul>
+      <div class="note">
+        <p>
+          If your mail provider has two-factor authentication (2FA) enabled, you may need to
+          generate an "app password" instead of using your regular login password. See the
+          provider-specific guides below.
+        </p>
+      </div>
+
+      <h2>2. Gmail (OAuth2)</h2>
+      <p>Connect a Gmail account using the "Sign in with Google" button in the app.</p>
+      <ol>
+        <li>Enter your Gmail address on the add-account screen</li>
+        <li>Your browser opens to Google's sign-in screen</li>
+        <li>After signing in, you'll see a permissions confirmation screen</li>
+        <li><strong>Make sure to check</strong> the scope-confirmation checkbox before selecting "Allow"</li>
+        <li>Return to the app and confirm the connection succeeded</li>
+      </ol>
+      <div class="note">
+        <p>
+          If the checkbox in step 4 is left unchecked, the correct permissions won't be granted
+          and you'll see an "Authentication failed" error. If this happens, go to account
+          settings, re-authorize, and make sure the checkbox is checked this time.
+        </p>
+      </div>
+
+      <h2>3. Provider-Specific Setup</h2>
+
+      <div class="provider-card">
+        <h3>Yahoo! Mail</h3>
+        <p>ID/password authentication. If you have two-step verification enabled, you'll need an app password.</p>
+        <p><a href="https://help.yahoo.com/kb/SLN15241.html">How to generate an app password (Yahoo! Help)</a></p>
+      </div>
+
+      <div class="provider-card">
+        <h3>Yahoo! JAPAN Mail</h3>
+        <p>ID/password authentication. If you have two-step verification enabled, you'll need an app password.</p>
+        <p>
+          <a href="https://support.yahoo-net.jp/PccMail/s/article/H000008270"
+            >How to generate an app password (Yahoo! JAPAN Support)</a
+          >
+        </p>
+      </div>
+
+      <div class="provider-card">
+        <h3>iCloud Mail</h3>
+        <p>
+          ID/password authentication. If two-factor authentication is enabled for your Apple ID,
+          you'll need a dedicated "app-specific password."
+        </p>
+        <p>
+          <a href="https://support.apple.com/en-us/102654"
+            >How to generate an app-specific password (Apple Support)</a
+          >
+        </p>
+      </div>
+
+      <div class="provider-card">
+        <h3>AOL Mail</h3>
+        <p>ID/password authentication. If you have two-step verification enabled, you'll need an app password.</p>
+        <p>
+          <a href="https://help.aol.com/articles/Create-and-manage-app-password"
+            >How to generate an app password (AOL Help)</a
+          >
+        </p>
+      </div>
+
+      <div class="provider-card">
+        <h3>Fastmail</h3>
+        <p>ID/password authentication. We recommend generating a dedicated app password.</p>
+        <p>
+          <a href="https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords"
+            >How to generate an app password (Fastmail Help)</a
+          >
+        </p>
+      </div>
+
+      <div class="provider-card">
+        <h3>Zoho Mail</h3>
+        <p>ID/password authentication. You may need to enable IMAP access and generate an app password.</p>
+        <p>
+          <a href="https://www.zoho.com/mail/help/imap-access.html"
+            >How to set up IMAP access (Zoho Help)</a
+          >
+        </p>
+      </div>
+
+      <h2>4. Common Issues</h2>
+      <ul>
+        <li>
+          <strong>Authentication fails</strong>: If two-factor authentication is enabled, you need
+          an app password rather than your normal login password. See the provider guides above.
+        </li>
+        <li>
+          <strong>Connection times out</strong>: Check that the host and port are correct, and
+          that your network firewall isn't blocking IMAP traffic (typically port 993).
+        </li>
+        <li>
+          <strong>Gmail shows "Authentication failed"</strong>: See section 2 above, step 4 —
+          re-authorize and make sure the scope-confirmation checkbox is checked.
+        </li>
+      </ul>
+
+      <h2>5. Still Need Help?</h2>
+      <p>
+        Please open an issue on
+        <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>,
+        including a description of the problem and which mail provider you're using.
+      </p>
+    </main>
+    <footer>
+      <p>
+        For questions or bug reports, please use
+        <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>.
+      </p>
+    </footer>
+  </body>
+</html>

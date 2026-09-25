@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Mail Filter</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mail Filter</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="../privacy.html">日本語</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="tagline">Last updated: September 26, 2026</p>
+
+      <h2>Information We Collect</h2>
+      <p>
+        Mail Filter does not send usage or analytics data to any external server. The only
+        servers the app communicates with are the IMAP server you configure yourself, and
+        Google's OAuth2 authentication server when you connect a Gmail account. The app does not
+        include any advertising SDK, analytics SDK, or tracking of any kind.
+      </p>
+
+      <h2>Information We Store</h2>
+      <ul>
+        <li>
+          Mail account credentials (password or OAuth refresh token) are encrypted using your
+          operating system's built-in encryption (Electron's <code>safeStorage</code>, via
+          Keychain on macOS) and stored only on your own device.
+        </li>
+        <li>
+          Email content and the data used for classifier training are stored only in a local
+          database (SQLite) on your device. Nothing is transmitted externally or shared with any
+          third party.
+        </li>
+      </ul>
+
+      <h2>Sharing with Third Parties</h2>
+      <p>We do not share any collected or stored data with third parties.</p>
+
+      <h2>Gmail OAuth Scope</h2>
+      <p>
+        When you connect a Gmail account, the Google consent screen requests only the
+        <code>https://mail.google.com/</code> scope (equivalent to reading and writing mail).
+        This scope is used solely to fetch, classify, and sort your mail, and for no other
+        purpose.
+      </p>
+
+      <div class="note">
+        <p>
+          When connecting Gmail, make sure to check the scope-confirmation checkbox on Google's
+          consent screen before granting access. If it is left unchecked, the app will not
+          receive the permissions it needs and you will see a connection error.
+        </p>
+      </div>
+
+      <h2>Data Deletion</h2>
+      <p>
+        Uninstalling the app, or removing a mail account from within the app, deletes the locally
+        stored credentials and training data for that account.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this policy, please reach out via
+        <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this policy is revised, the "Last updated" date at the top of this page will be
+        updated accordingly.
+      </p>
+    </main>
+    <footer>
+      <p>
+        For questions or bug reports, please use
+        <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>.
+      </p>
+    </footer>
+  </body>
+</html>
