@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
-    <header>
+    <header class="wide">
       <h1>MailMagnet</h1>
       <nav>
         <a href="index.html">Home</a>
@@ -17,7 +17,7 @@
         <a href="../index.html">日本語</a>
       </nav>
     </header>
-    <main>
+    <main class="wide">
       <p class="tagline">
         A desktop mail client that automatically sorts your IMAP mail using a Bayesian
         classifier.
@@ -27,8 +27,8 @@
         class="hero-shot"
         src="../assets/screenshots/hero-classification-log-en.png"
         alt="MailMagnet's classification log screen, showing a list of recently sorted mail with subject, sender, and the genre each was automatically filed under"
-        width="1591"
-        height="1060"
+        width="2880"
+        height="1800"
       />
 
       <h2>Key Features</h2>
@@ -45,12 +45,64 @@
         </li>
       </ul>
 
+      <h2>MailMagnet in Action</h2>
+      <ul class="gallery">
+        <li>
+          <figure>
+            <img
+              src="../assets/screenshots/screenshot-folders-en.png"
+              alt="Folders screen, showing trained message counts and magnet rule counts for each genre"
+              width="2880"
+              height="1800"
+              loading="lazy"
+            />
+            <figcaption>See training progress and magnet rule counts for every genre at a glance</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img
+              src="../assets/screenshots/screenshot-magnet-en.png"
+              alt="Magnet screen, showing rules that map sender addresses or subject text to a genre"
+              width="2880"
+              height="1800"
+              loading="lazy"
+            />
+            <figcaption>Force certain mail into the right genre by sender address or subject</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img
+              src="../assets/screenshots/screenshot-account-en.png"
+              alt="Accounts screen, showing the list of registered IMAP accounts"
+              width="2880"
+              height="1800"
+              loading="lazy"
+            />
+            <figcaption>Manage multiple IMAP accounts, each fully independent</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img
+              src="../assets/screenshots/screenshot-general-en.png"
+              alt="General settings screen, showing theme, language, training retention, and confidence threshold options"
+              width="2880"
+              height="1800"
+              loading="lazy"
+            />
+            <figcaption>Fine-tune theme, language, training retention, and confidence threshold</figcaption>
+          </figure>
+        </li>
+      </ul>
+
       <p>
         <a class="cta" href="support.html">View setup guide</a>
         <a class="cta" href="privacy.html">View privacy policy</a>
       </p>
     </main>
-    <footer>
+    <footer class="wide">
       <p>
         For questions or bug reports, please use
         <a href="https://github.com/maskedeng-tom/mail-filter-site/issues">GitHub Issues</a>.
